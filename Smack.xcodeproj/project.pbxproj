@@ -19,6 +19,8 @@
 		0E3793C31F92B7AA00CE09D0 /* AvtarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3793C21F92B7AA00CE09D0 /* AvtarPickerVC.swift */; };
 		0E3793C51F92CC5500CE09D0 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3793C41F92CC5500CE09D0 /* AvatarCell.swift */; };
 		0E3793C71F933F9F00CE09D0 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3793C61F933F9F00CE09D0 /* CircleImage.swift */; };
+		0E431E311F962AD300E00DED /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E431E2F1F962AD300E00DED /* ProfileVC.swift */; };
+		0E431E321F962AD300E00DED /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E431E301F962AD300E00DED /* ProfileVC.xib */; };
 		0E5AB9381F90F06A0074D7C2 /* GradiendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5AB9371F90F06A0074D7C2 /* GradiendView.swift */; };
 		0E5AB93B1F90FD3E0074D7C2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5AB93A1F90FD3E0074D7C2 /* Constants.swift */; };
 		0E5AB93D1F9104540074D7C2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5AB93C1F9104540074D7C2 /* LoginVC.swift */; };
@@ -42,6 +44,8 @@
 		0E3793C21F92B7AA00CE09D0 /* AvtarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvtarPickerVC.swift; sourceTree = "<group>"; };
 		0E3793C41F92CC5500CE09D0 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		0E3793C61F933F9F00CE09D0 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		0E431E2F1F962AD300E00DED /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		0E431E301F962AD300E00DED /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		0E5AB9371F90F06A0074D7C2 /* GradiendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradiendView.swift; sourceTree = "<group>"; };
 		0E5AB93A1F90FD3E0074D7C2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0E5AB93C1F9104540074D7C2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -83,6 +87,7 @@
 				0E5AB93C1F9104540074D7C2 /* LoginVC.swift */,
 				0E5AB93E1F9106470074D7C2 /* CreateAccountVC.swift */,
 				0E3793C21F92B7AA00CE09D0 /* AvtarPickerVC.swift */,
+				0E431E2F1F962AD300E00DED /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 		0E2E14D91F8CFC8500ADA37D /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				0E431E331F962AF000E00DED /* XIBs */,
 				0E3793BB1F923C0600CE09D0 /* Services */,
 				0E5AB9391F90FD010074D7C2 /* Utilities */,
 				0E09F8531F8EB42100F03AB4 /* Model */,
@@ -148,6 +154,14 @@
 				0E3793C01F92AC8700CE09D0 /* UserDataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		0E431E331F962AF000E00DED /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				0E431E301F962AD300E00DED /* ProfileVC.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 		0E5AB9391F90FD010074D7C2 /* Utilities */ = {
@@ -239,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E431E321F962AD300E00DED /* ProfileVC.xib in Resources */,
 				0E2E14E51F8CFC8500ADA37D /* LaunchScreen.storyboard in Resources */,
 				0E2E14E21F8CFC8500ADA37D /* Assets.xcassets in Resources */,
 				0E2E14E01F8CFC8500ADA37D /* Main.storyboard in Resources */,
@@ -300,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E431E311F962AD300E00DED /* ProfileVC.swift in Sources */,
 				0E3793C31F92B7AA00CE09D0 /* AvtarPickerVC.swift in Sources */,
 				0EA05E451F8EBD1600DB545C /* SWRevealViewController.m in Sources */,
 				0E3793BF1F92497500CE09D0 /* RoundedButton.swift in Sources */,
