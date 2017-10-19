@@ -68,6 +68,8 @@ class AuthService {
         
         let lowerCaseEmail = email.lowercased()
         
+        print(lowerCaseEmail)
+        
         let body: [String: Any] = [
             "email": lowerCaseEmail,
             "password": password
@@ -75,11 +77,17 @@ class AuthService {
         
         Alamofire.request(URL_LOGIN, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HEADER).responseJSON { (response) in
             
+            print(response.result.error)
+            print(response.data)
+            
             if response.result.error == nil {
                 guard let data = response.data else { return }
                 let json = JSON(data: data)
                 self.userEmail = json["user"].stringValue
                 self.authToken = json["token"].stringValue
+                
+                print(self.userEmail)
+                print(self.authToken)
                 
                 self.isLoggedIn = true
                 completion(true)
@@ -88,6 +96,8 @@ class AuthService {
                 debugPrint(response.result.error as Any)
             }
         }
+        
+        
     }
  
     func createUser(name: String, email: String, avatarName: String, avatarColor: String, completion: @escaping CompletionHandler) {
@@ -102,6 +112,8 @@ class AuthService {
         ]
         
         Alamofire.request(URL_USER_ADD, method: .post, parameters: body, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
+            
+            print(response.result.error)
             
             if response.result.error == nil {
                 guard let data = response.data else { return }
@@ -118,6 +130,8 @@ class AuthService {
     func findUserByEmail(completion: @escaping CompletionHandler) {
         
         Alamofire.request("\(URL_USER_BY_EMAIL)\(userEmail)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
+            
+            print(response.result.error)
             
             if response.result.error == nil {
                 guard let data = response.data else { return }
