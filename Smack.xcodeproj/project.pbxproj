@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E0727A21F9A2C7E00597857 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0727A11F9A2C7E00597857 /* Message.swift */; };
 		0E0727A41F9A323D00597857 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0727A31F9A323D00597857 /* KeyboardBoundView.swift */; };
+		0E0727A61F9A359200597857 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0727A51F9A359200597857 /* MessageCell.swift */; };
 		0E09F8551F8EB46500F03AB4 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E09F8541F8EB46500F03AB4 /* ChatVC.swift */; };
 		0E09F8571F8EB48800F03AB4 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E09F8561F8EB48800F03AB4 /* ChannelVC.swift */; };
 		0E2E14DB1F8CFC8500ADA37D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E14DA1F8CFC8500ADA37D /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		0E0727A11F9A2C7E00597857 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		0E0727A31F9A323D00597857 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
+		0E0727A51F9A359200597857 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		0E09F8541F8EB46500F03AB4 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		0E09F8561F8EB48800F03AB4 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		0E2E14D71F8CFC8500ADA37D /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +120,7 @@
 				0E3793C61F933F9F00CE09D0 /* CircleImage.swift */,
 				0EAAF7A81F977D9A00747149 /* ChannelCell.swift */,
 				0E0727A31F9A323D00597857 /* KeyboardBoundView.swift */,
+				0E0727A51F9A359200597857 /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				0E3793C31F92B7AA00CE09D0 /* AvtarPickerVC.swift in Sources */,
 				0EA05E451F8EBD1600DB545C /* SWRevealViewController.m in Sources */,
 				0E3793BF1F92497500CE09D0 /* RoundedButton.swift in Sources */,
+				0E0727A61F9A359200597857 /* MessageCell.swift in Sources */,
 				0E0727A21F9A2C7E00597857 /* Message.swift in Sources */,
 				0EAAF7A71F9779AC00747149 /* Channel.swift in Sources */,
 				0E3793C71F933F9F00CE09D0 /* CircleImage.swift in Sources */,
